@@ -1,0 +1,19 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+// @import url('./fonts/IBMPlexSerif-Bold.ttf');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+.card {
+    margin-top: 20%;
+}
+
+.login-header {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    text-align: center;
+}
