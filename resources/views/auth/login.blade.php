@@ -20,7 +20,7 @@
                             @csrf
                             <div class="form-group row">
                                 <div class="col-md-12">
-                                    <h1 class="login-header">Login</h1>
+                                    <p class="login-header">Login</p>
                                 </div>
                             </div>
                             <div class="form-group row">
