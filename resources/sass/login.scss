@@ -1,0 +1,27 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+// @import url('./fonts/IBMPlexSerif-Bold.ttf');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+html, body {
+    background-image: linear-gradient(-90deg, #4a148c, #f3e5f5);
+}
+
+.card {
+    margin-top: 30%;
+    border-radius: 0;
+}
+
+.login-header {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    text-align: center;
+    text-shadow: 3px 3px 8px #000000;
+    font-size: 60px;
+    font-weight: bold;
+}
