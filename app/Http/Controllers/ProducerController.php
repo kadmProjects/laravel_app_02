@@ -2,10 +2,9 @@
 
 namespace App\Http\Controllers;
 
-use App\Town;
 use Illuminate\Http\Request;
 
-class TownController extends Controller
+class ProducerController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,9 +13,7 @@ class TownController extends Controller
      */
     public function index()
     {
-        $towns = Town::all();
-
-        return view('town/list', ['towns' => $towns]);
+        //
     }
 
     /**
@@ -26,7 +23,7 @@ class TownController extends Controller
      */
     public function create()
     {
-        return view('town/add');
+        //
     }
 
     /**
@@ -37,34 +34,13 @@ class TownController extends Controller
      */
     public function store(Request $request)
     {
-        $request->validate([
-            'town' => 'required|max:255',
-            'country' => 'required|max:255',
-            'country_code' => 'required|max:255',
-            'country_code_iso' => 'required|max:255',
-        ]);
-
-        try {
-            $town = new Town();
-            $town->name = $request->town;
-            $town->country = $request->country;
-            $town->country_code = $request->country_code;
-            $town->country_iso_code = $request->country_code_iso;
-            $town->save();
-
-            return redirect('town')->with('success', 'Town created successfully!');
-
-        } catch (\Exception $e) {
-            report($e);
-            return redirect('town')->with('error', 'Something unexpected has occured. Please try again later.');
-
-        }
+        //
     }
 
     /**
      * Display the specified resource.
      *
-     * @param  \App\Town  $town
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
     public function show($id)
@@ -75,7 +51,7 @@ class TownController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Town  $town
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
     public function edit($id)
@@ -87,7 +63,7 @@ class TownController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Town  $town
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
     public function update(Request $request, $id)
@@ -98,7 +74,7 @@ class TownController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Town  $town
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
     public function destroy($id)

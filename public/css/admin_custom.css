@@ -1,3 +1,27 @@
-.sidebar .nav .nav-item .nav-link p {
-    margin-left: 10px;
+/*
+ * Towns Component Styles
+*/
+.list-towns-header .list-towns-add {
+    border-radius: 0px;
+}
+
+.add-town-card, .list-towns-card {
+    border-radius: 0px;
+}
+
+.form-control{
+    background: #f4f6f9;
+    border-radius: 0px;
+    border: dashed 1px #66b3ff;
+    color: #4da6ff;
+}
+
+.form-control:focus {
+    border-radius: 0px;
+    border: solid 1px #66b3ff;
+    background: #cce6ff;
+}
+
+#add-town-reset-btn, #add-town-submit-btn {
+    border-radius: 0px;
 }

@@ -104,7 +104,7 @@
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! D:\wamp64\www\laravel_app_02\resources\js\login.js */"./resources/js/login.js");
+module.exports = __webpack_require__(/*! /var/www/laravel_app_02/resources/js/login.js */"./resources/js/login.js");
 
 
 /***/ })

@@ -133,17 +133,11 @@ return [
     */
 
     'use_route_url' => false,
-
     'dashboard_url' => 'home',
-
     'logout_url' => 'logout',
-
     'login_url' => 'login',
-
     'register_url' => 'register',
-
     'password_reset_url' => 'password/reset',
-
     'password_email_url' => 'password/email',
 
     /*
@@ -173,55 +167,55 @@ return [
     */
 
     'menu' => [
-        [
-            'text' => 'search',
-            'search' => true,
-            'topnav' => true,
-        ],
-        [
-            'text' => 'blog',
-            'url'  => 'admin/blog',
-            'can'  => 'manage-blog',
-        ],
+        // [
+        //     'text' => 'search',
+        //     'search' => true,
+        //     'topnav' => true,
+        // ],
+        // [
+        //     'text' => 'blog',
+        //     'url'  => 'admin/blog',
+        //     'can'  => 'manage-blog',
+        // ],
         [
             'text'        => 'Dashboard',
-            'url'         => 'home/dashboard',
-            'icon'        => 'fas fa-tachometer-alt',
+            'url'         => 'dashboard',
+            'icon'        => 'fas fa-fw fa-tachometer-alt',
             'label'       => '',
             'label_color' => '',
         ],
         [
             'text'        => 'Movies',
-            'url'         => 'home/movie',
-            'icon'        => 'fas fa-film',
+            'url'         => 'movie',
+            'icon'        => 'fas fa-fw fa-film',
             'label'       => '',
             'label_color' => '',
         ],
         [
             'text'        => 'Actors',
-            'url'         => 'home/actor',
-            'icon'        => 'fas fa-street-view',
+            'url'         => 'actor',
+            'icon'        => 'fas fa-fw fa-street-view',
             'label'       => '',
             'label_color' => '',
         ],
         [
             'text'        => 'Directors',
-            'url'         => 'home/director',
-            'icon'        => 'fas fa-male',
+            'url'         => 'director',
+            'icon'        => 'fas fa-fw fa-male',
             'label'       => '',
             'label_color' => '',
         ],
         [
             'text'        => 'Production Company',
-            'url'         => 'home/company',
-            'icon'        => 'fas fa-building',
+            'url'         => 'company',
+            'icon'        => 'fas fa-fw fa-building',
             'label'       => '',
             'label_color' => '',
         ],
         [
             'text'        => 'Home Town',
-            'url'         => 'home/town',
-            'icon'        => 'fas fa-city',
+            'url'         => 'town',
+            'icon'        => 'fas fa-fw fa-city',
             'label'       => '',
             'label_color' => '',
         ],
