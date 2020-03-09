@@ -82,4 +82,24 @@
 
 @section('js')
     <script src="{{ asset('js/jquery.dataTables.min.js') }}"></script>
+    <script>
+        $(document).ready(function() {
+            $('#town-lists thead tr').clone(true).appendTo('#town-lists thead');
+            $('#town-lists thead tr:eq(0) th').each(function (i) {
+                var title = $(this).text();
+                $(this).html('<input type="text" placeholder="' + title + '"/>');
+                $('input', this).on( 'keyup change clear', function () {
+                    if (table.column(i).search() !== this.value ) {
+                        table.column(i).search(this.value).draw();
+                    }
+                });
+            });
+            var table = $('#town-lists').DataTable({
+                orderCellsTop: false,
+                dom: 'B<"clear">lfrtip',
+                scrollX:        200,
+                scrollCollapse: true
+            });
+        });
+    </script>
 @endsection
